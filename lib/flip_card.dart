@@ -168,7 +168,7 @@ class FlipCardState extends State<FlipCard>
   Widget build(BuildContext context) {
     final child = Stack(
       alignment: widget.alignment,
-      fit: StackFit.passthrough,
+      fit: StackFit.loose,
       children: <Widget>[
         _buildContent(front: true),
         _buildContent(front: false),
